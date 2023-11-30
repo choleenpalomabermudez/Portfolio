@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./css/custom-starter.css" rel="stylesheet">
+
+    <style>
+        body {
+            position: relative;
+            background: linear-gradient(to right,#1C2126,#F27C22);
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./images/bg2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.7;
+            z-index: -1;
+        }
+
+        main {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand img {
+              width: 300px; /* Adjust the width as needed */
+              height: 150px;
+            image-rendering: pixelated;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+        /* Larger nav-link style */
+.nav-link {
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #333; 
+    border-radius: 8px; /* Increased border radius for a softer look */
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    font-size: 1.2rem; /* Adjust the font size */
+}
+
+/* Hover effect */
+.nav-link:hover {
+    background: #1A1B1F;
+    transform: scale(1.05);
+}
+
+/* Active link style */
+.nav-link.active {
+    
+}
+
+/* Bootstrap icon styles */
+.nav-link i {
+    margin-right: 10px;
+    font-size: 1.8rem; /* Adjust the icon size */
+}
+
+
+        .nav-link {
+            color: #ffffff !important;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #f8f9fa !important;
+        }/* Resetting default list styles */
+
+
+        .social-icons a {
+            color: #ffffff;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #f8f9fa;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        
+        .text-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+        }
+
+        
+        .text-container p {
+            color: #ffffff;
+        }
+
+       
+        .text-container img {
+            width: 100%; 
+            max-width: 300px; 
+            height: auto; 
+            display: block;
+            margin: 60px auto 0; 
+            box-shadow: 0 0 10px #CF9D72; 
+            transition: transform 0.3s ease-in-out; 
+        }
+
+        
+        .text-container img:hover {
+            transform: scale(1.1); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        }
+    </style>
+
+    <title>About | Choleen Designs</title>
+</head>
+
+<body>
+
+    <div class="container px-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+					Choleen Paloma Bermudez
+                    <span class="d-none">Choleen Designs</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center">
+    <li class="nav-item">
+        <a href="about.html" class="nav-link active">
+            <i class="bi bi-person"></i> About
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="portfolio.html" class="nav-link">
+            <i class="bi bi-grid"></i> Portfolio
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="contact.html" class="nav-link">
+            <i class="bi bi-envelope"></i> Contact
+        </a>
+    </li>
+</ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main class="container singleCol mx-auto my-2 my-md-4">
+        <div class="container overflow-hidden text-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>About Choleen</h1>
+                    <p class="lead">
+                       My name is Choleen. I believe that every individual has unique characteristics which distinguish them from others. To be unique you must have an extraordinary spark or skill. I live with my family and my family members taught me to live together, adjust, help others, and be humble. Apart from this, I am a cat person who loves to play with my pet.
+                    </p>                 
+                    
+                </div>
+                <div class="col-md-6">
+                    <p class="text-center">
+                        <img src="itsmesheesh.jpg" alt="Choleen Portrait">
+                    </p>
+                            </div>
+        </div>
+    </main>
+
+  <footer class="py-5">
+    <div class="d-flex flex-row justify-content-center social-icons">
+        <a href="https://www.facebook.com/choleenpaloma.bermudez.3" class="me-4" style="font-size: 30px;" title="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-facebook" viewBox="0 0 16 16">
+                <path
+                    d="M1.792 0C.802 0 0 .79 0 2.09v11.82C0 15.21.802 16 1.792 16h6.18V8.74H5.395V6.555h2.577V4.965c0-2.55 1.555-3.935 3.826-3.935 1.094 0 2.037.08 2.31.117v2.67h-1.584c-1.244 0-1.488.59-1.488 1.46v1.917h2.983l-.39 2.185h-2.594V16h5.097c.99 0 1.792-.79 1.792-1.91V1.91C16 .79 15.198 0 14.208 0H1.792Z" />
+            </svg>
+        </a>
+        <a href="https://github.com/choleenpalomabermudez" class="me-4" style="font-size: 30px;" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-github" viewBox="0 0 16 16">
+                <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.20-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.20-.82 2.20-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8Z" />
+            </svg>
+        </a>
+    </div>
+                    <p>
+                        Connect with me on social media for more updates and exciting content!
+                    </p>
+                </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87.bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
